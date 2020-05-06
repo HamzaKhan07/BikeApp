@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-link{
+    text-decoration: none;
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+.head{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    color: gray;
+    font-size: 17px;
+    padding-top: 20px;
+    border: none;
+}
+.form label{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-bottom: 1px solid gray;
+}
+.form .first-name-error,.last-name-error, .email-error, .pass-error, .add-error{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 60px;
+    width: 80%;
+    height: 20%;
+    top: 0%;
+    font-size: 14px;
+    color: red;
+}
+.add-container .form .add-error{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 60px;
+    width: 80%;
+    height: 20%;
+    top: 0%;
+    font-size: 14px;
+}
+.error p{
+    font-size: 14px;
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 3px solid rgb(77, 165, 238);
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+.content-name{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.5s ease;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+.form input:focus + #content-mail,
+.form input:valid + #content-mail{
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+.add-container{
+    width: 80%;
+    height: 30%;
+    margin: auto;
+}
+.add-container .form input{
+    display: block;
+    padding-top: 40px;
+    overflow: scroll;
+    height: 100%;
+}
+.form input:focus + #label-add #content-add,
+.form input:valid + #label-add #content-add{
+    transform: translateY(-250%);
+    font-size: 14px;
+}
+.butn{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+}
+.butn button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(62, 221, 62);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.butn button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    margin-top: 50px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+}
+.footer-list img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 550px)
+{
+    .logo-container img{
+        width: 30px;
+        height: 30px;
+    }
+    .logo-container h4{
+        margin: 10px 0 0 2px;
+        font-size: 11px;
+    }
+    .cart img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-links{
+        font-size: 12px;
+    }
+    /*Increase this*/
+    .form{
+        height: 65%; 
+    }
+    .form input:focus + .label-name .content-name,
+    .form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 12px;
+    }
+    .form input:focus + #label-add #content-add,
+    .form input:valid + #label-add #content-add{
+    transform: translateY(-250%);
+    font-size: 13px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    .content-name{
+        font-size: 13px;
+    }
+    .last-name-error,.email-error, .pass-error, .first-name-error{
+        font-size: 11px;
+    }
+    .add-container .form .add-error{
+        font-size: 11px;
+    }
+
+@media (max-width: 475px)
+{
+    .footer-list img{
+        width: 17px;
+        height: 17px;
+    }
+    .head h1{
+        font-size: 20px;
+    }
+    .cart img{
+        width: 25px;
+        height: 25px;
+    }
+    .first-name-error p{
+        font-size: 11px;
+    }
+    .add-container .form input{
+        padding-top: 60px;
+    }
+    .butn button{
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 390px)
+{
+    .form input{
+        font-size: 14px;
+    }
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .nav-links{
+        font-size: 10px;
+        justify-content: space-between;
+    }
+}

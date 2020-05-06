@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-link{
+    color: purple;
+    text-decoration: none;
+}
+.nav-links #active{
+    border-bottom: 3px solid rgb(241, 148, 241);
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+.first-container{
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+.cover svg{
+    width: 100%;
+    height: 100%;
+}
+.intro-container{
+    display: flex;
+    align-items: center;
+}
+.intro h1{
+    font-size: 60px;
+    margin: 1rem;
+}
+.intro p{
+    margin: 1rem;
+}
+.intro button{
+    width: 200px;
+    height: 50px;
+    margin: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 0, 242), rgb(0, 195, 255));
+    color: rgb(224, 214, 214);
+    font-weight: 600;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.intro button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.cover #left-wheel, #right-wheel{
+    animation: turn 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+.cover #man-bike{
+    animation: jump 1s ease infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+.cover #hat{
+    animation: drop 1s ease infinite alternate;
+}
+
+.second-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 110px;
+}
+.second-head, .third-head, .forth-head{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-head h2, .third-head h2, .forth-head h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.second-cover{
+    width: 100%;
+    height: 60%;
+}
+.second-cover svg{
+    width: 100%;
+    height: 100%;
+}
+.second-content{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.second-content button, .third-content button ,.forth-content button{
+    width: 150px;
+    height: 50px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    background: linear-gradient(to right, rgb(255, 0, 242), rgb(0, 195, 255));
+    color: rgb(224, 214, 214);
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.second-content button:hover, .third-content button:hover, .forth-content button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+/*frame*/
+.second-cover #Vector_26,.second-cover #Vector_27,.second-cover #Vector_28,.second-cover #Vector_29,.second-cover #Vector_30,.second-cover #Vector_31,.second-cover #Vector_32,.second-cover #Vector_33,.second-cover #Vector_34,.second-cover #Vector_25{
+    animation: colors 20s infinite linear alternate;
+}
+/*chain-icon*/
+.second-cover #chain1,.second-cover #chain2{
+     animation: turn 2s infinite linear;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+/*wheel icon*/
+.second-cover #wheel-1{
+     animation: turn 5s infinite linear;
+     transform-origin: center;
+     transform-box: fill-box;
+}
+/*Rim icon*/
+.second-cover #Vector_49{
+    animation: rim-colors 2s infinite linear alternate;
+}
+/*Rim*/
+.second-cover #Vector_2, #Vector_3{
+    animation: rim-colors 2s infinite linear alternate;
+}
+/*seat*/
+.second-cover #Vector_11{
+    animation: seat-colors 10s infinite linear alternate;
+}
+.third-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.third-cover{
+    text-align: center;
+    height: 50%;
+}
+.third-content{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.third-cover svg{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.forth-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.forth-cover{
+    width: 100%;
+    height: 60%;
+    margin: auto;
+}
+.forth-cover svg{
+    width: 100%;
+    height: 100%;
+}
+.forth-cover #Vector_22{
+    fill: #de5246;
+}
+.forth-cover #Vector_23{
+    fill: #ffce44;
+}
+.forth-cover #Vector_45{
+    fill: #4c8bf5;
+}
+.forth-cover #first,.forth-cover #second,.forth-cover #third{
+    animation: up 1s ease infinite alternate;
+}
+.forth-content{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+footer{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    margin-top: 40px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+}
+.footer-list img{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes up{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-9%);
+    }
+}
+
+
+#boy1-right-wheel, #boy1-right-wheel_2, #boy2-right-wheel, #boy2-left-wheel{
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#boy1, #boy2{
+    animation: move 1s ease infinite alternate;
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes move{
+    from{
+        tranform: translateX(0%);
+    }
+    to{
+        transform: translateX(5%);
+    }
+}
+@keyframes colors{
+    0%{
+        fill: red;
+    }
+    10%{
+        fill: blue;
+    }
+    20%{
+        fill: green;
+    }
+    30%{
+        fill: orange;
+    }
+    40%{
+        fill: midnightblue
+    }
+    50%{
+        fill: lightblue;
+    }
+    60%{
+        fill: lightgreen;
+    }
+    70%{
+        fill: black;
+    }
+    80%{
+        fill: white;
+    }
+    90%{
+        fill: pink;
+    }
+    100%{
+        fill: violet;
+    }
+}
+@keyframes turn{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes rim-colors{
+    0%{
+        fill: black;
+    }
+    100%{
+        fill: silver;
+    }
+}
+@keyframes seat-colors{
+    0%{
+        fill: brown;
+    }
+    25%{
+        fill: silver;
+    }
+    50%{
+        fill: lightgreen;
+    }
+    75%{
+        fill: orange;
+    }
+    100%{
+        fill: black;
+    }
+}
+@keyframes turn{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes jump{
+    from{
+        transform: rotateX(0deg)
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes drop{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(4%);
+    }
+}
+@media (max-width: 550px)
+{
+    .logo-container{
+        width: 30px;
+        height: 30px;
+    }
+    .logo-container h4{
+        margin: 10px 0 0 2px;
+        font-size: 11px;
+    }
+    .cart img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-links{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 1300px)
+{
+    .third-container{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 1200px)
+{
+    .forth-container{
+        height: 150vh;
+    }
+    .third-container{
+        height: 120vh;
+    }
+}
+@media (max-width: 1000px)
+{
+    .second-container{
+        height: 130vh;
+    }
+    .second-cover{
+        height: 40%;
+    }
+    .forth-cover{
+        height: 50%;
+    }
+    .forth-container{
+        height: 100vh;
+    }
+    .second-container{
+        height: 100vh;
+    }
+    .third-container{
+        height: 100vh;
+    }
+}
+@media (max-width: 900px) 
+{
+    .first-container{
+        width: 100%;
+        margin: auto;
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+    .intro button{
+        width: 150px;
+    }
+    .header{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 800px)
+{
+    .third-container{
+        height: 110vh;
+    }
+    .third-cover svg{
+        width: 100%;
+    }
+}
+@media (max-width: 700px)
+{
+    .intro h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px)
+{
+    .first-container{
+        grid-template-columns: 1fr;
+        height: 80vh;
+    }
+    .cover{
+        height: 300px;
+    }
+    .intro-container{
+        text-align: center;
+    }
+    .third-cover{
+        height: 40%;
+    }
+    .third-container{
+        height: 100vh;
+    }
+    .second-container{
+        height: 90vh;
+    }
+    .third-cover{
+        height: 40%;
+    }
+    .second-cover{
+        height: 50%;
+    }
+    .forth-container{
+        height: 110vh;
+    }
+    .forth-cover{
+        height: 40%;
+    }
+}
+@media(max-width: 500px)
+{
+    .first-container{
+        height: 90vh;
+    }
+   .second-container, .third-container, .forth-container{
+        width: 90%;
+        margin: auto;
+    }
+    .second-container{
+        margin-top: 50px;
+        height: 110vh;
+    }
+    .second-head h2, .third-head h2, .forth-head h2{
+        font-size: 20px;
+    }
+    .second-content p, .third-content p, .forth-content p{
+        font-size: 14px;
+    }
+    .second-content button, .third-content button, .forth-content button{
+        font-size: 16px;
+    }
+    .intro p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px)
+{
+    .first-container{
+        width: 100%;
+        margin: auto;
+        grid-gap: 0rem;
+    }
+    .intro-container{
+        width: 100%;
+    }
+    .intro button{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .cover{
+        width: 100%;
+    }
+    .second-cover{
+        height: 50%;
+    }
+    .second-container{
+        height: 100vh;
+    }
+    .second-container, .third-container, .forth-container{
+        width: 100%;
+        margin: auto;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 380px)
+{
+    .logo-container img{
+        margin: 7px 0 0 0;
+        width: 30px;
+        height: 20px;
+    }
+    .second-container{
+        height: 120vh;
+    }
+}
+@media (max-width: 375px)
+{
+    .second-cover{
+        height: 40%;
+    }
+    .second-container{
+        height: 100vh;
+    }
+}
+@media (max-width: 330px)
+{
+    .second-cover{
+        height: 40%;
+    }
+    .second-container{
+        height: 90vh;
+    }
+    .third-cover{
+        height: 30%;
+    }
+}
+@media (max-width: 310px)
+{
+    .second-container{
+        height: 100vh;
+    }
+}
+@media (max-width: 600px)
+{
+    .footer-list img{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 475px)
+{
+    .cart img{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 390px)
+{
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .footer-list img{
+        width: 17px;
+        height: 17px;
+    }
+    .nav-links{
+        font-size: 10px;
+        justify-content: space-between;
+    }
+}

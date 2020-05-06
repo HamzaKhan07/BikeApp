@@ -1,0 +1,891 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-link{
+    color: purple;
+}
+.nav-links #active{
+    border-bottom: 3px solid rgb(241,148,241);
+}
+.nav-link{
+    text-decoration: none;
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.cycle{
+    position: sticky;
+    top: 0;
+    width: 80%;
+    height: 62vh;
+    margin: auto;
+    background: url(back/background_white.gif);
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+.component{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frame{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tyres{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rim-left{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rim-right{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.handle{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.seat{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chain{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.grip{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Frames upgrades*/
+
+.frame-matte, .frame-gloss{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Tires upgrades*/
+
+.grand-prix ,.gatorskin{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Brook upgrades*/
+
+.golden-seat{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*Chain upgrades*/
+
+.rustbuster{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Cargo Upgrades*/
+.cargo{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*----------------------- Colors ------------------------*/
+
+/*Grip-colors*/
+.grip-orange, .grip-yellow, .grip-white{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.grip-upright-black ,.grip-upright-white, .grip-upright-yellow, .grip-upright-orange{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.grip-classic-black, .grip-classic-white, .grip-classic-yellow, .grip-classic-orange{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.grip-powerful-black, .grip-powerful-white, .grip-powerful-yellow, .grip-powerful-orange{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Handles */
+.handle-upright, .handle-classic, .handle-powerful{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*Component-colors*/
+
+.component-silver{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+/*----------------------- Chain-Colors ------------------------*/
+
+
+.chainYellow{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chainOrange{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chainPink{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chainRed{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chainWhite{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chainYellow{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rim-left-silver, .rim-right-silver{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rim-left-white, .rim-right-white{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*---------------frameColors---------------*/
+
+.frameGreen{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameMint{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameOrange{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameRed{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameSky{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameWhite{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frameYellow{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chain_color_chg{
+    padding: 20px 0 0 0;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.chain_color_chg button{
+    width: 70px;
+}
+.frame_color_chg{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.frame_color_chg button{
+    width: 70px;
+}
+
+/* CSS styling*/
+.background-container{
+    padding: 20px 0 0 0;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+.background-container h3{
+    font-weight: 500;
+}
+.background{
+    padding: 10px 0 0 0;
+}
+.background img{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.background img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.design_head{
+    width: 80%;
+    height: 10vh;
+    margin: 25px auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    background: #ddd;
+}
+.design_head h2{
+    font-weight: 500;
+}
+.design_head h3{
+    font-weight: 500;
+    display: flex;
+}
+.section1{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    padding: 0 0 0 20px;
+}
+.section1 h2{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(48, 48, 119)
+}
+.color-card{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,auto));
+    grid-gap: 6rem;
+    /*text-align: center;*/
+}
+.Frame-image img,.Rim-image img,.Grip-image img,.Chain-image img,.Component-image img{
+    margin: 0 0 0 25px;
+    width: 70%;
+    padding: 20px 0 20px 0;
+}
+.Frame-content h3, .Rim-content h3, .Grip-content h3, .Chain-content h3,.Component-content h3{
+    text-align: center;
+}
+.Frame-colors img, .Chain-colors img, .Component-colors img, .Grip-colors img, .Rim-colors img{
+    cursor: pointer;
+}
+
+
+
+.section2{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    padding: 0 0 0 20px;
+}
+.section2 h2{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(48, 48, 119)
+}
+.select-handle{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,auto));
+    grid-gap: 8rem;
+}
+.handle-img-1 img,.handle-img-2 img,.handle-img-3 img,.handle-img-4 img, .handle-img-5 img{
+    width: 100%;
+}
+.handle-card-1 h3, .handle-card-2 h3, .handle-card-3 h3, .handle-card-4 h3,.handle-card-5 h3{
+    text-align: center;
+}
+
+
+.section3{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    padding: 0 0 0 20px;
+}
+.section3 h2{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(48, 48, 119)
+}
+.upgrades{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,auto));
+    grid-gap: 8rem;
+}
+.frame-options img, .tires-options img, .brook-options img, .chain-options img, .cargo-options img{
+    width: 50%;
+}
+.frame-fin-img img, .tyres-img img, .brook-img img, .chain-img img,.cargo-img img{
+    width: 100%;
+}
+.brook-img img{
+    width: 100%;
+    padding: 0 0 0 30px;
+}
+.frame-fin-img{
+    padding: 15px 0 0 0;
+}
+.tyres-img{
+    padding: 15px 0 35px 0;
+}
+.brook-img{
+    padding: 15px 0 35px 0;
+}
+.chain-img{
+    padding: 15px 0 33px 0;
+}
+.cargo-img{
+    padding: 0 0 10px 0;
+}
+.frame-upgrade h3, .tires-upgrade h3, .brooks-upgrade h3, .chains-upgrade h3,.cargo-upgrade h3{
+    text-align: center;
+}
+.frame-options, .tires-options, .brook-options , .chain-options, .cargo-options{
+    display: flex;
+    justify-content:space-around;
+    flex-flow: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background: #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.frame-options{
+    margin: 37px 0 0 0;
+}
+.cargo-options{
+    margin: 30px 0 0 0;
+}
+.frame-options img, .tires-options img, .brook-options img, .chain-options img, .cargo-options img{
+    padding: 10px 0 10px 0;
+}
+.section4{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    padding: 0 0 0 20px;
+}
+.section4 h2{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(48, 48, 119)
+}
+.order{
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+.order button{
+    margin: 20px 0 0 0;
+    width: 250px;
+    height: 100px;
+    background: lightgreen;
+    color: green;
+    border: none;
+    font-size: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h3{
+    font-weight: 500;
+}
+h2, h4{
+    font-weight: 550;
+}
+.f-op-1, .f-op-2, .f-op-3, .t-op-1, .t-op-2, .t-op-3, .b-op-1, .b-op-2, .c-op-1, .c-op-2, .ca-op-1, .ca-op-2{
+    border-right: 4px solid #ddd;
+}
+.handle-img-1, .handle-img-2, .handle-img-3, .handle-img-4{
+    cursor: pointer;
+}
+.f-op-1 img, .f-op-2 img, .f-op-3 img, .t-op-1 img, .t-op-2 img, .t-op-3 img, .c-op-1 img, .c-op-2 img, .b-op-1 img, .b-op-2 img, .cargo-op-1 img, .cargo-op-2 img{
+    cursor: pointer;
+}
+.order button{
+    cursor: pointer;
+}
+footer{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+}
+.footer-list img{
+    width: 30px;
+    height: 30px;
+}
+
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+div.light{
+    border-right: 4px solid red;
+}
+div.Blight{
+    border-bottom: 4px solid red;
+}
+
+@media (max-width: 1200px)
+{
+    .background img{
+        width: 40px;
+        height: 40px;
+    }
+    .background-container{
+        width: 150px;
+    }
+    .cycle div img{
+        width: 750px;
+        height: 350px;
+    }
+    .Frame-colors img, .Rim-colors img, .Grip-colors img, .Chain-colors img, .Component-colors img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 850px)
+{
+    .cycle div img{
+        width: 600px;
+        height: 300px;
+    }
+}
+@media (max-width: 600px)
+{
+    .footer-list img{
+        width: 20px;
+        height: 20px;
+    }
+    .background-container h3{
+        font-size: 15px;
+    }
+    /* Design heading*/
+    .design_head h2{
+        font-size: 17px;
+    }
+    /*Price*/
+    .design_head h3{
+        font-size: 15px;
+    }
+    /*Each section heading*/
+    .section1 h2, .section2 h2, .section3 h2, .section4 h2{
+        font-size: 16px;
+    }
+    /*Colors heading*/
+    .Frame-content h3, .Rim-content h3, .Grip-content h3, .Chain-content h3, .Component-content h3{
+        font-size: 15px;
+    }
+    /*All parts colors image*/
+    .Frame-image, .Rim-image, .Grip-image, .Chain-image, .Component-image{
+        width: 130px;
+        height: 130px;
+        margin: auto;
+    }
+    /*Handle heading*/
+    .handle-card-1 h3, .handle-card-2 h3, .handle-card-3 h3, .handle-card-4 h4{
+        font-size: 15px;
+    }
+    /*All parts upgrade heading*/
+    .frame-upgrade h3, .tires-upgrade h3, .brooks-upgrade h3, .chains-upgrade h3, .cargo-upgrade h3{
+        font-size: 15px;
+    }
+    .frame-fin-img, .tyres-img{
+        width: 130px;
+        height: 130px;
+        margin: auto;
+    }
+    .tyres-img{
+        padding: 20px 0px 0px 0px;
+    }
+    .tires-options{
+        margin: 30px 0 0 0;
+    }
+    /*All upgrades heading*/
+    .f-op-1 h4, .f-op-2 h4, .f-op-3 h4,.t-op-1 h4, .t-op-2 h4, .t-op-3 h4, .b-op-1 h4,.b-op-2 h4, .c-op-1 h4, .c-op-2 h4, .cargo-op-1 h4, .cargo-op-2 h4
+    {
+        font-size: 14px;
+    }
+    /*Order Price*/
+    .order h1{
+        font-size: 20px;
+    }
+    /*Order button*/
+    .order button{
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    .cycle div img{
+        width: 500px;
+        height: 250px;
+    }
+    .cycle{
+        height: 50vh;
+    }
+}
+@media (max-width: 550px) /*current*/
+{ 
+    
+    .logo-container img{
+        width: 30px;
+        height: 30px;
+    }
+    .logo-container h4{
+        margin: 10px 0 0 2px;
+        font-size: 11px;
+    }
+    .cart img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-links{
+        font-size: 12px;
+    }
+    .background img{
+        width: 30px;
+        height: 30px;
+    }
+    .background-container{
+        width: 120px;
+    }
+    /* Design heading*/
+    .design_head h2{
+        font-size: 14px;
+    }
+    /*Price*/
+    .design_head h3{
+        font-size: 14px;
+    }
+    /*Each section heading*/
+    .section1 h2, .section2 h2, .section3 h2, .section4 h2{
+        font-size: 14px;
+    }
+    /*Colors heading*/
+    .Frame-content h3, .Rim-content h3, .Grip-content h3, .Chain-content h3, .Component-content h3{
+        font-size: 13px;
+    }
+
+    .Frame-colors img, .Rim-colors img, .Grip-colors img, .Chain-colors img, .Component-colors img{
+        width: 30px;
+        height: 30px;
+    }
+    /*Handle heading*/
+    .handle-card-1 h3, .handle-card-2 h3, .handle-card-3 h3, .handle-card-4 h3{
+        font-size: 13px;
+    }
+    /*Handle image adjustment*/
+    .handle-img-1, .handle-img-2, .handle-img-3, .handle-img-4{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    .frame-upgrade, .tires-upgrade, .brooks-upgrade, .chains-upgrade, .cargo-upgrade{
+        margin: auto;
+        width: 150px;
+    }
+    .select-handle{
+        grid-gap: 2rem;
+    }
+    .cycle div img{
+        width: 400px;
+        height: 200px;
+    }
+    .cycle{
+        width: 100%;
+        margin: auto;
+        height: 40vh;
+    }
+    
+}
+@media (max-width: 475px)
+{
+    .cart img{
+        width: 25px;
+        height: 25px;
+    }
+    .background-container h3{
+        font-size: 13px;
+    }
+    .design_head{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .section1, .section2, .section3, .section4{
+        width: 100%;
+        margin: auto;
+    }
+    .select-handle{
+        grid-gap: 3rem;
+    }
+    .upgrades{
+        grid-gap: 3rem;
+    }
+    .color-card{
+        grid-gap: 3rem;
+    }
+    .design_head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+    }
+    /* Design heading*/
+    .design_head h2{
+        font-size: 15px;
+    }
+    /*Price*/
+    .design_head h3{
+        font-size: 12px;
+    }
+    /*Handle image adjustment*/
+    .handle-img-1, .handle-img-2, .handle-img-3, .handle-img-4{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+    /*Upgrade Cards*/
+    .frame-upgrade, .tires-upgrade, .brooks-upgrade, .chains-upgrade, .cargo-upgrade{
+        margin: auto;
+        width: 130px;
+    }
+    .frame-upgrade h3, .tires-upgrade h3, .brooks-upgrade h3, .chains-upgrade h3, .cargo-upgrade h3{
+        font-size: 14px;
+    }
+    .f-op-1 h4, .f-op-2 h4, .f-op-3 h4, .t-op-1 h4, .t-op-2 h4, .t-op-3 h4, .c-op-1 h4, .c-op-2 h4, .b-op-1 h4, .b-op-2 h4, .cargo-op-1 h4, .cargo-op-2 h4
+    {
+        font-size: 13px;
+    }
+    .frame-fin-img, .tyres-img,.cargo-img{
+        width:95px;
+        height: 95px;
+        margin: auto;
+    }
+    .chain-img{
+        width: 100px;
+        height: 80px;
+        margin: auto;
+        padding: 10px 0 0 0;
+    }
+    .chain-options{
+        margin: 50px 0 0 0;
+    }
+    .cycle div img{
+        width: 390px;
+        height: 190px;
+    }
+    .cycle{
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (max-width: 390px)
+{
+    .background-container h3{
+        font-size: 10px;
+    }
+    .footer-list img{
+        width: 17px;
+        height: 17px;
+    }
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .nav-links{
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    .background-container{
+        width: 100px;
+    }
+    .background img{
+        width: 25px;
+        height: 25px;
+    }
+    .Frame-colors img, .Rim-colors img, .Grip-colors img, .Chain-colors img, .Component-colors img{
+        width: 25px;
+        height: 25px;
+    }
+    .design_head{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .section1, .section2, .section3, .section4{
+        width: 100%;
+        margin: auto;
+    }
+    .select-handle{
+        grid-gap: 3rem;
+    }
+    .upgrades{
+        grid-gap: 3rem;
+    }
+    .color-card{
+        grid-gap: 3rem;
+    }
+    .frame-fin-img, .tyres-img,.cargo-img{
+        width:95px;
+        height: 95px;
+        margin: auto;
+    }
+    .chain-img{
+        width: 100px;
+        height: 80px;
+        margin: auto;
+        padding: 10px 0 0 0;
+    }
+    .chain-options{
+        margin: 50px 0 0 0;
+    }
+    .cycle div img{
+        width: 350px;
+        height: 170px;
+    }
+    .cycle{
+        height: 35vh;
+    }
+}
